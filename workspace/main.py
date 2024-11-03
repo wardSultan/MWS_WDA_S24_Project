@@ -7,7 +7,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 
 # تحميل البيانات
-data = pd.read_csv(r'.\sales_data_sample.csv', encoding='ISO-8859-1')
+data = pd.read_csv('./sales_data_sample.csv', encoding='ISO-8859-1')
 
 # تنظيف البيانات
 data = data.dropna()
